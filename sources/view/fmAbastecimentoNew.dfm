@@ -1,0 +1,226 @@
+object _fmAbastecimentoNew: T_fmAbastecimentoNew
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Novo Abastecimento'
+  ClientHeight = 436
+  ClientWidth = 334
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 31
+    Top = 66
+    Width = 44
+    Height = 23
+    Caption = 'Litros'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 31
+    Top = 129
+    Width = 115
+    Height = 23
+    Caption = 'Pre'#231'o do Litro'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 31
+    Top = 195
+    Width = 176
+    Height = 23
+    Caption = 'Al'#237'quota de Impostos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 31
+    Top = 262
+    Width = 112
+    Height = 23
+    Caption = 'Valor a Pagar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 31
+    Top = 0
+    Width = 158
+    Height = 23
+    Caption = 'N'#250'mero da Bomba'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 31
+    Top = 328
+    Width = 100
+    Height = 23
+    Caption = 'Combust'#237'vel'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object edLitros: TMaskEdit
+    Left = 31
+    Top = 95
+    Width = 173
+    Height = 31
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Text = '0'
+    OnChange = edLitrosChange
+  end
+  object edValorPorLitro: TEdit
+    Left = 31
+    Top = 158
+    Width = 176
+    Height = 31
+    TabStop = False
+    Color = 13882323
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object edAliquota: TEdit
+    Left = 31
+    Top = 224
+    Width = 176
+    Height = 31
+    TabStop = False
+    Color = 13882323
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 5
+  end
+  object edValorAPagar: TEdit
+    Left = 31
+    Top = 291
+    Width = 176
+    Height = 31
+    TabStop = False
+    Color = 13882323
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object btnSalvar: TButton
+    Left = 232
+    Top = 29
+    Width = 81
+    Height = 75
+    Caption = 'Salvar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnSalvarClick
+  end
+  object cbBombas: TComboBox
+    Left = 31
+    Top = 29
+    Width = 176
+    Height = 31
+    Style = csDropDownList
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 23
+    ParentFont = False
+    TabOrder = 0
+    OnChange = cbBombasChange
+  end
+  object btnNovo: TButton
+    Left = 232
+    Top = 110
+    Width = 81
+    Height = 75
+    Caption = 'Novo'
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnNovoClick
+  end
+  object edCombustivel: TEdit
+    Left = 31
+    Top = 357
+    Width = 176
+    Height = 31
+    TabStop = False
+    Color = 4227327
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 7
+  end
+end

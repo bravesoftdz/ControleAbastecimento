@@ -1,0 +1,49 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{c346df50-ec30-4bf6-ae2a-aae8d4ced4b9}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DUnitW32">
+    <MSBuild Projects="DUnitW32.dproj" Targets="" />
+  </Target>
+  <Target Name="DUnitW32:Clean">
+    <MSBuild Projects="DUnitW32.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DUnitW32:Make">
+    <MSBuild Projects="DUnitW32.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DUnitTestLibW32">
+    <MSBuild Projects="..\tests\DUnitTestLibW32.dproj" Targets="" />
+  </Target>
+  <Target Name="DUnitTestLibW32:Clean">
+    <MSBuild Projects="..\tests\DUnitTestLibW32.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DUnitTestLibW32:Make">
+    <MSBuild Projects="..\tests\DUnitTestLibW32.dproj" Targets="Make" />
+  </Target>
+  <Target Name="UnitTestsW32">
+    <MSBuild Projects="..\tests\UnitTestsW32.dproj" Targets="" />
+  </Target>
+  <Target Name="UnitTestsW32:Clean">
+    <MSBuild Projects="..\tests\UnitTestsW32.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="UnitTestsW32:Make">
+    <MSBuild Projects="..\tests\UnitTestsW32.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DUnitW32;DUnitTestLibW32;UnitTestsW32" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="DUnitW32:Clean;DUnitTestLibW32:Clean;UnitTestsW32:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="DUnitW32:Make;DUnitTestLibW32:Make;UnitTestsW32:Make" />
+  </Target>
+</Project>

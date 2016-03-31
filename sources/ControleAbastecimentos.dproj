@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5e5de6d5-d39a-4d03-96f9-1ddc37230927}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>ControleAbastecimentos.exe</DCC_DependencyCheckOutputName>
+    <MainSource>ControleAbastecimentos.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG;DELPHI;DELPHI6;DELPHI7;VCL</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">1</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">4</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1046</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Fortes Informática</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Controle de Abastecimentos</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.1.0.4</VersionInfoKeys><VersionInfoKeys Name="InternalName">ControleAbastecimentos</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Todos os direitos reservados à Fortes Informática</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">ControleAbastecimentos.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">Controle de Abastecimentos</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.1</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\5.0\Bpl\PngComponentsD9.bpl">Png components</Excluded_Packages>
+      <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\5.0\Bpl\dclIndy70.bpl">Internet Direct (Indy) for D7 Property and Component Editors</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">ControleAbastecimentos.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="ControleAbastecimentos.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="connection\dm.pas">
+      <Form>_dm</Form>
+    </DCCReference>
+    <DCCReference Include="control\constantes.pas" />
+    <DCCReference Include="control\entradaController.pas" />
+    <DCCReference Include="dao\abastecimentoDao.pas" />
+    <DCCReference Include="dao\bombaDao.pas" />
+    <DCCReference Include="dao\entradaDao.pas" />
+    <DCCReference Include="dao\tanqueDao.pas" />
+    <DCCReference Include="dao\tipoCombustivelDao.pas" />
+    <DCCReference Include="fmMain.pas">
+      <Form>_fmMain</Form>
+    </DCCReference>
+    <DCCReference Include="model\abastecimento.pas" />
+    <DCCReference Include="model\bomba.pas" />
+    <DCCReference Include="model\configuracao.pas" />
+    <DCCReference Include="model\entrada.pas" />
+    <DCCReference Include="model\tanque.pas" />
+    <DCCReference Include="model\tipocombustivel.pas" />
+    <DCCReference Include="reports\fmFiltroPeriodo.pas">
+      <Form>_fmFiltroPeriodo</Form>
+    </DCCReference>
+    <DCCReference Include="reports\rptAbastecimentosPorPeriodo.pas">
+      <Form>_rptAbastecimentosPorPeriodo</Form>
+    </DCCReference>
+    <DCCReference Include="view\fmAbastecimentoNew.pas">
+      <Form>_fmAbastecimentoNew</Form>
+    </DCCReference>
+    <DCCReference Include="view\fmAbastecimentosList.pas">
+      <Form>_fmAbastecimentosList</Form>
+    </DCCReference>
+    <DCCReference Include="view\fmBombasList.pas">
+      <Form>_fmBombasList</Form>
+    </DCCReference>
+    <DCCReference Include="view\fmEntradaNew.pas">
+      <Form>_fmEntradaNew</Form>
+    </DCCReference>
+    <DCCReference Include="view\fmTanquesList.pas">
+      <Form>_fmTanquesList</Form>
+    </DCCReference>
+    <DCCReference Include="view\fmTipoCombustivelList.pas">
+      <Form>_fmTipoCombustivelList</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>

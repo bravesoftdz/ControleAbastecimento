@@ -1,0 +1,11 @@
+Dados Informacionais:
+
+SGDB Utilizado: Firebird Versão 2.5.5
+Design Pattern Utilizado: MVC
+
+Observações: 
+- Não foram utilizados componentes DBWare.
+- O pacote de entrega inclui os fontes, a base de dados (POSTO.GDB) e o script de dump da base de dados.
+
+
+

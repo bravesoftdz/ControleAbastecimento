@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/03/28 21:12:47.016.pas,C:\Users\nelson\Documents\RAD Studio\Projects\Unit1.pas=D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\ControleAbastecimentos_DUnit.pas</Transaction>
+    <Transaction>2016/03/28 21:12:47.016.dfm,C:\Users\nelson\Documents\RAD Studio\Projects\Unit1.dfm=D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\ControleAbastecimentos_DUnit.dfm</Transaction>
+    <Transaction>2016/03/28 21:13:13.954.pas,D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\ControleAbastecimentos_DUnit.pas=</Transaction>
+    <Transaction>2016/03/28 21:13:13.954.dfm,D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\ControleAbastecimentos_DUnit.dfm=</Transaction>
+    <Transaction>2016/03/28 21:13:53.021.dproj,C:\Users\nelson\Documents\RAD Studio\Projects\Project1.dproj=D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\ControleAbastecimentos_DUnit.dproj</Transaction>
+    <Transaction>2016/03/28 21:23:53.084.pas,D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\Unit1.pas=D:\Pastas de Sistema\Desktop\Delphi\Sistema\DUnit\Units\tipoCombustivelDao_DUnit.pas</Transaction>
+  </Transactions>
+</BorlandProject>
